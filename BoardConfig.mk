@@ -27,4 +27,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
 TARGET_OTA_ASSERT_DEVICE := OnePlus6T
-include device/oneplus/oneplus6/BoardConfig.mk
+
+# inherit from oneplus6
+-include device/oneplus/oneplus6/BoardConfig.mk

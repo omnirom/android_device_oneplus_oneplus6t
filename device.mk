@@ -25,4 +25,5 @@ $(call inherit-product, vendor/oneplus/oneplus6/device-vendor.mk)
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/oneplus/oneplus6t/prebuilt/system,system)
 
-include device/oneplus/oneplus6/device.mk
+# common oneplus6
+$(call inherit-product, device/oneplus/oneplus6/device.mk)
