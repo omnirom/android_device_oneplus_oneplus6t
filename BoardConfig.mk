@@ -19,11 +19,14 @@
 # product configuration (apps).
 #
 
-BOARD_PATH := device/oneplus/oneplus6t
+DEVICE_PATH := device/oneplus/oneplus6t
 
 PRODUCT_SHIPPING_API_LEVEL := 28
 
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(BOARD_PATH)/bluetooth
-TARGET_SYSTEM_PROP := $(BOARD_PATH)/system.prop
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
+TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
-include device/oneplus/oneplus6/BoardConfig.mk
+TARGET_OTA_ASSERT_DEVICE := OnePlus6T
+
+# inherit from oneplus6
+-include device/oneplus/oneplus6/BoardConfig.mk
