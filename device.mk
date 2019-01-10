@@ -19,7 +19,7 @@
 # device-specific aspects (drivers) with a device-agnostic
 # product configuration (apps).
 #
-$(call inherit-product, vendor/oneplus/oneplus6/device-vendor.mk)
+$(call inherit-product, vendor/oneplus/oneplus6t/oneplus6t-vendor.mk)
 
 # Prebuilt
 PRODUCT_COPY_FILES += \
