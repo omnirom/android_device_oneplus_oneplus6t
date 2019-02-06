@@ -1,7 +1,7 @@
 -priv-app/WfdService/WfdService.apk
 -framework/WfdCommon.jar
 -framework/qcrilhook.jar
--framework/qti-telephony-common.jar|ebd313db259e0d24ccf6455cadc878b72d2ee6d1
+-framework/qti-telephony-common.jar|9a9b390f7c175f2345612ebd5bfcf9a92710f497
 -framework/qcnvitems.jar
 -priv-app/dpmserviceapp/dpmserviceapp.apk
 -app/AntHalService/AntHalService.apk
@@ -13,6 +13,10 @@
 -app/embms/embms.apk
 -priv-app/CNEService/CNEService.apk
 -app/imssettings/imssettings.apk
--app/ims/ims.apk|1aab8ee5e3b81f9534a034b4e0fa2b1a857ac05b
+-app/ims/ims.apk|50368c4aec27dd5b4c846efd999137153ee5f2bb
 -framework/com.qti.dpmframework.jar
 -app/datastatusnotification/datastatusnotification.apk
+
+-app/DiracManager/DiracManager.apk
+-priv-app/DiracAudioControlService/DiracAudioControlService.apk
+
