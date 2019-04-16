@@ -25,5 +25,8 @@ $(call inherit-product, vendor/oneplus/oneplus6t/oneplus6t-vendor.mk)
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,device/oneplus/oneplus6t/prebuilt/system,system)
 
+PRODUCT_PACKAGES += \
+    vendor.oneplus.fingerprint.extension@1.0
+
 # common oneplus6
 $(call inherit-product, device/oneplus/oneplus6/device.mk)
