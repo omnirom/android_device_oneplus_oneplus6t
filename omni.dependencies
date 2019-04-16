@@ -1,26 +1,14 @@
 [
   {
     "remote": "omnirom",
-    "repository": "android_packages_apps_SnapdragonCamera2",
-    "target_path": "packages/apps/SnapdragonCamera2",
+    "repository": "android_device_oneplus_oneplus6",
+    "target_path": "device/oneplus/oneplus6",
     "revision": "android-9.0"
   },
   {
     "remote": "omnirom",
-    "repository": "android_device_qcom_caf-sepolicy",
-    "target_path": "device/qcom/sepolicy",
+    "repository": "android_vendor_interfaces",
+    "target_path": "vendor/interfaces",
     "revision": "android-9.0"
   },
-  {
-    "remote": "omnirom",
-    "repository": "android_kernel_oneplus_sdm845",
-    "target_path": "kernel/oneplus/sdm845",
-    "revision": "android-9.0"
-  },
-  {
-    "remote": "omnirom",
-    "repository": "android_packages_apps_OmniDisplayManager",
-    "target_path": "packages/apps/OmniDisplayManager",
-    "revision": "android-9.0"
-  }
 ]
