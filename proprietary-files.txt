@@ -240,8 +240,6 @@ lib64/libvr_sam_wrapper.so
 lib64/libxt_native.so
 lib64/vendor.display.color@1.0.so
 lib64/vendor.display.color@1.1.so
-lib64/vendor.display.config@1.0.so
-lib64/vendor.display.config@1.1.so
 lib64/vendor.display.postproc@1.0.so
 lib64/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so
 lib64/vendor.oneplus.camera.CameraHIDL@1.0.so
@@ -376,8 +374,6 @@ lib/libvr_sam_wrapper.so
 lib/libxt_native.so
 lib/vendor.display.color@1.0.so
 lib/vendor.display.color@1.1.so
-lib/vendor.display.config@1.0.so
-lib/vendor.display.config@1.1.so
 lib/vendor.display.postproc@1.0.so
 lib/vendor.oneplus.camera.CameraHIDL@1.0-adapter-helper.so
 lib/vendor.oneplus.camera.CameraHIDL@1.0.so
@@ -501,4 +497,3 @@ lib/libnxpnfc-nci.so
 lib64/vendor.nxp.nxpnfc@1.0.so
 lib/vendor.nxp.nxpnfc@1.0.so
 etc/nfcee_access.xml
-
