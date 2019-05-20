@@ -127,7 +127,7 @@ framework/com.qti.dpmframework.jar
 framework/dpmapi.jar
 framework/embmslibrary.jar
 framework/izat.xt.srv.jar
-framework/qtiNetworkLib.jar
+-framework/qtiNetworkLib.jar
 framework/vendor.qti.data.factory-V1.0-java.jar
 framework/vendor.qti.hardware.alarm-V1.0-java.jar
 framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar
@@ -500,3 +500,4 @@ lib/vendor.nxp.nxpnfc@1.0.so
 etc/nfcee_access.xml
 
 -priv-app/OPNetworkSetting/OPNetworkSetting.apk|d25e3155dc84b34f233e1f543c2d3deace603385
+
