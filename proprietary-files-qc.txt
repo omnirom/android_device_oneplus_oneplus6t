@@ -16,3 +16,4 @@
 -app/ims/ims.apk|50368c4aec27dd5b4c846efd999137153ee5f2bb
 -framework/com.qti.dpmframework.jar
 -app/datastatusnotification/datastatusnotification.apk
+-framework/tcmiface.jar
