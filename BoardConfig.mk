@@ -21,8 +21,6 @@
 
 DEVICE_PATH := device/oneplus/oneplus6t
 
-PRODUCT_SHIPPING_API_LEVEL := 28
-
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 TARGET_KERNEL_CONFIG := omni_oneplus6t_defconfig
