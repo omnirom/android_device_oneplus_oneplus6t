@@ -69,7 +69,5 @@
     <bool name="config_dozeAlwaysOnEnabled">false</bool>
 
     <!-- Show a custom view for FOD -->
-    <bool name="config_needCustomFODView">true</bool>
-
-    <bool name="config_usesOnePlusFOD">true</bool>
+    <bool name="config_usesFOD">true</bool>
 </resources>
