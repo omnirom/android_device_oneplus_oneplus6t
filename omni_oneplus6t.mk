@@ -40,10 +40,14 @@ DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
+# # get the rest of aosp stuff after ours
+$(call inherit-product, $(SRC_TARGET_DIR)/product/mainline_system_arm64.mk)
+
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/oneplus/oneplus6t/device.mk)
 
 ALLOW_MISSING_DEPENDENCIES := true
+PRODUCT_SHIPPING_API_LEVEL := 28
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := omni_oneplus6t
@@ -52,11 +56,11 @@ PRODUCT_BRAND := OnePlus
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := ONEPLUS A6013
 
-PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=OnePlus6T PRODUCT_NAME=OnePlus6T
+TARGET_DEVICE := OnePlus6T
+PRODUCT_SYSTEM_NAME := OnePlus6T
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT=OnePlus/OnePlus6T/OnePlus6T:9/PKQ1.180716.001/1908012000:user/release-keys \
-    PRIVATE_BUILD_DESC="OnePlus6T-user 9 PKQ1.180716.001 1908012000 release-keys"
+OMNI_BUILD_FINGERPRINT := OnePlus/OnePlus6T/OnePlus6T:9/PKQ1.180716.001/1908012000:user/release-keys
+OMNI_PRIVATE_BUILD_DESC := OnePlus6T-user 9 PKQ1.180716.001 1908012000 release-keys
 
 PLATFORM_SECURITY_PATCH_OVERRIDE := 2019-08-01
 
