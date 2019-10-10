@@ -3,6 +3,6 @@
     "remote": "omnirom",
     "repository": "android_device_oneplus_oneplus6",
     "target_path": "device/oneplus/oneplus6",
-    "revision": "android-9.0"
+    "revision": "android-10"
   }
 ]

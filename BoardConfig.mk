@@ -33,5 +33,7 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
 # inherit from oneplus6
 -include device/oneplus/oneplus6/BoardConfig.mk
