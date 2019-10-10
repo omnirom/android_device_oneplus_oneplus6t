@@ -26,11 +26,10 @@ TARGET_KERNEL_CONFIG := omni_oneplus6t_defconfig
 
 TARGET_OTA_ASSERT_DEVICE := OnePlus6T
 
-DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += $(DEVICE_PATH)/vendor_framework_compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
+
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # inherit from oneplus6
 include device/oneplus/oneplus6/BoardConfig.mk
