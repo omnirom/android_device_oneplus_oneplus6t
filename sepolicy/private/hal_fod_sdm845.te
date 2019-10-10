@@ -4,6 +4,9 @@ hal_server_domain(hal_fod_sdm845, hal_omni_fod)
 type hal_fod_sdm845_exec, exec_type, file_type;
 init_daemon_domain(hal_fod_sdm845)
 
+# Allow access to the HALs
+hal_client_domain(hal_fod_sdm845, hal_fingerprint)
+
 # Allow binder communication with hal_display_default
 binder_call(hal_fod_sdm845, hal_display_default)
 
@@ -18,3 +21,7 @@ allow hal_fod_sdm845 hal_fingerprint_hwservice:hwservice_manager find;
 
 # Allow hal_fod_sdm845 to read and write to sysfs_fod
 allow hal_fod_sdm845 sysfs_fod:file rw_file_perms;
+allow hal_fod_sdm845 sysfs_oem:file rw_file_perms;
+allow hal_fod_sdm845 sysfs_graphics:file rw_file_perms;
+allow hal_fod_sdm845 omni_sysfs_drm:file rw_file_perms;
+
