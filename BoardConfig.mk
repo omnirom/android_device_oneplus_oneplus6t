@@ -33,6 +33,3 @@ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # inherit from oneplus6
 include device/oneplus/oneplus6/BoardConfig.mk
-
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-
