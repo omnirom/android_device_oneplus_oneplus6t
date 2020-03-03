@@ -21,6 +21,8 @@
 
 DEVICE_PATH := device/oneplus/oneplus6t
 
+BOARD_PREBUILT_VENDORIMAGE := vendor/image/oneplus/oneplus6t/vendor.img
+
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 TARGET_KERNEL_CONFIG := omni_oneplus6t_defconfig
 

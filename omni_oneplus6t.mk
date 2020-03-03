@@ -39,12 +39,16 @@ AB_OTA_UPDATER := true
 DEVICE_PACKAGE_OVERLAYS += device/oneplus/oneplus6t/overlay/device
 DEVICE_PACKAGE_OVERLAYS += device/oneplus/oneplus6/overlay/common
 DEVICE_PACKAGE_OVERLAYS += vendor/omni/overlay/CarrierConfig
+BOARD_AVB_ALGORITHM := SHA256_RSA4096
+BOARD_AVB_KEY_PATH := device/oneplus/oneplus6/verifiedboot.key
+
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # # get the rest of aosp stuff after ours
 $(call inherit-product, $(SRC_TARGET_DIR)/product/mainline_system_arm64.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/verity.mk)
 
 # Inherit from hardware-specific part of the product configuration
 $(call inherit-product, device/oneplus/oneplus6t/device.mk)
