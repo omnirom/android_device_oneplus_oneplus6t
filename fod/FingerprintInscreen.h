@@ -48,6 +48,7 @@ class FingerprintInscreen : public IFingerprintInscreen {
     Return<bool> handleError(int32_t error, int32_t vendorCode) override;
     Return<void> setLongPressEnabled(bool enabled) override;
     Return<int32_t> getDimAmount(int32_t cur_brightness) override;
+    Return<int32_t> getDimAmountPressed(int32_t cur_brightness) override;
     Return<bool> shouldBoostBrightness() override;
     Return<void> setCallback(const sp<IFingerprintInscreenCallback>& callback) override;
     Return<int32_t> getPositionX() override;
@@ -55,6 +56,7 @@ class FingerprintInscreen : public IFingerprintInscreen {
     Return<int32_t> getSize() override;
 
   private:
+    bool mFodCircleVisible;
     sp<IOneplusDisplay> mVendorDisplayService;
     sp<IVendorFingerprintExtensions> mVendorFpService;
 
@@ -67,7 +69,7 @@ class FingerprintInscreen : public IFingerprintInscreen {
 }  // namespace inscreen
 }  // namespace fingerprint
 }  // namespace biometrics
-}  // namespace lineage
+}  // namespace omni
 }  // namespace vendor
 
 #endif  // VENDOR_OMNI_BIOMETRICS_FINGERPRINT_INSCREEN_V1_0_FINGERPRINTINSCREEN_H
