@@ -25,3 +25,4 @@ allow hal_fod_sdm845 sysfs_oem:file rw_file_perms;
 allow hal_fod_sdm845 sysfs_graphics:file rw_file_perms;
 allow hal_fod_sdm845 omni_sysfs_drm:file rw_file_perms;
 
+allow hal_fod_sdm845 sysfs_graphics_omni:file rw_file_perms;
