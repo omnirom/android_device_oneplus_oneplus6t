@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "omni.biometrics.fingerprint.inscreen@1.1-service.oneplus7pro"
+#define LOG_TAG "omni.biometrics.fingerprint.inscreen@1.0-service.oneplus6t"
 
 #include <android-base/logging.h>
 #include <hidl/HidlTransportSupport.h>
@@ -24,14 +24,15 @@
 using android::hardware::configureRpcThreadpool;
 using android::hardware::joinRpcThreadpool;
 
-using vendor::omni::biometrics::fingerprint::inscreen::V1_1::IFingerprintInscreen;
-using vendor::omni::biometrics::fingerprint::inscreen::V1_1::implementation::FingerprintInscreen;
+using vendor::omni::biometrics::fingerprint::inscreen::V1_0::IFingerprintInscreen;
+using vendor::omni::biometrics::fingerprint::inscreen::V1_0::implementation::FingerprintInscreen;
 
 using android::OK;
 using android::status_t;
 
 int main() {
     android::sp<IFingerprintInscreen> service = new FingerprintInscreen();
+
     configureRpcThreadpool(1, true);
 
     status_t status = service->registerAsService();

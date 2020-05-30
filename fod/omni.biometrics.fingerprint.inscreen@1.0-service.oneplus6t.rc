@@ -2,8 +2,8 @@ on init
     chown system system /sys/class/drm/card0-DSI-1/op_friginer_print_hbm
     chmod 0660 /sys/class/drm/card0-DSI-1/op_friginer_print_hbm
 
-service fingerprint-inscreen-1-1 /system/bin/hw/omni.biometrics.fingerprint.inscreen@1.1-service.oneplus6t
-    interface vendor.omni.biometrics.fingerprint.inscreen@1.1::IFingerprintInscreen default
+service fingerprint-inscreen-1-0 /system/bin/hw/omni.biometrics.fingerprint.inscreen@1.0-service.oneplus6t
+    interface vendor.omni.biometrics.fingerprint.inscreen@1.0::IFingerprintInscreen default
     class hal
     user system
     group system
