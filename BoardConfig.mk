@@ -24,12 +24,14 @@ DEVICE_PATH := device/oneplus/oneplus6t
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 TARGET_KERNEL_CONFIG := omni_oneplus6t_defconfig
 
-TARGET_OTA_ASSERT_DEVICE := OnePlus6T
+TARGET_OTA_ASSERT_DEVICE := oneplus6t
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
+
+TARGET_SURFACEFLINGER_FOD_LIB := //$(DEVICE_PATH):libfod_extension.oneplus_sdm845
 
 # inherit from oneplus6
 include device/oneplus/oneplus6/BoardConfig.mk
