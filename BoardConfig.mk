@@ -24,7 +24,7 @@ DEVICE_PATH := device/oneplus/oneplus6t
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 TARGET_KERNEL_CONFIG := omni_oneplus6t_defconfig
 
-TARGET_OTA_ASSERT_DEVICE := oneplus6t
+TARGET_OTA_ASSERT_DEVICE := oneplus6t,OnePlus6T
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(DEVICE_PATH)/framework_manifest.xml
